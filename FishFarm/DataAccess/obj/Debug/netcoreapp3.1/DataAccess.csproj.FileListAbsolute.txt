@@ -1,0 +1,13 @@
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache

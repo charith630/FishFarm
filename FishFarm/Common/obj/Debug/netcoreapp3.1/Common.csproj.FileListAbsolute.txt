@@ -1,0 +1,10 @@
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\bin\Debug\netcoreapp3.1\Common.dll
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\bin\Debug\netcoreapp3.1\Common.pdb
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.dll
+D:\Workspace\My-Workspace\Creative-Software\FishFarm\Common\obj\Debug\netcoreapp3.1\Common.pdb

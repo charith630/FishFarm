@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L+Qy/dSwwgswUwNCFiRIrZJzO5Jhg9K04umtO0joWJQYFBOut1gMBeac4Vt1wTKE7tv03zOHTkQ32TsL7fDH0g==",
+  "success": true,
+  "projectFilePath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\WebApi\\WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GP62 6QE\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
