@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0+s7/E8flrASLyrubkiUYQLBzurhq3LO+34nLSscLASpEtJ1VK91DbAhwY+TrPI639Em9U8hyLP5p8zi1wF63A==",
+  "dgSpecHash": "1lPW4oQzwePoeYqNEVCgH3Wjr0p1UDf/OfM3P4NcCkSWI6LNITcp+ygaN56mcLBsZTp9qhtmVlKwtUK7unPsRg==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\Service\\Service.csproj",
+  "projectFilePath": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\Service\\Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
