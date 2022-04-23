@@ -1,11 +1,12 @@
 ﻿using Common.Request;
+using System.Threading.Tasks;
 
 namespace Service.Interfaces
 {
     public interface IFarmService
     {
-        public bool RegisterFarm(FarmRequest farmRequest);
+        public Task<bool> RegisterFarm(FarmRequest farmRequest);
 
-        public void GetAllFarms();
+        public Task GetAllFarms();
     }
 }

@@ -8,3 +8,16 @@ D:\Workspace\My-Workspace\Creative-Software\FishFarm\Service\obj\Debug\netcoreap
 D:\Workspace\My-Workspace\Creative-Software\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
 D:\Workspace\My-Workspace\Creative-Software\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.dll
 D:\Workspace\My-Workspace\Creative-Software\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.pdb
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\bin\Debug\netcoreapp3.1\Service.dll
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\bin\Debug\netcoreapp3.1\Service.pdb
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\bin\Debug\netcoreapp3.1\Common.dll
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\bin\Debug\netcoreapp3.1\Common.pdb
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.csproj.AssemblyReference.cache
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.dll
+D:\My-Workspace\Projects\FishFarm\FishFarm\Service\obj\Debug\netcoreapp3.1\Service.pdb

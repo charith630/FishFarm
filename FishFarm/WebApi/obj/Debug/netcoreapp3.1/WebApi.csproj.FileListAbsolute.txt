@@ -41,3 +41,5 @@ D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\obj\Debug\netcoreapp3.1\WebApi
 D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\obj\Debug\netcoreapp3.1\WebApi.dll
 D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\obj\Debug\netcoreapp3.1\WebApi.pdb
 D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\obj\Debug\netcoreapp3.1\WebApi.genruntimeconfig.cache
+D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\bin\Debug\netcoreapp3.1\Service.dll
+D:\My-Workspace\Projects\FishFarm\FishFarm\WebApi\bin\Debug\netcoreapp3.1\Service.pdb
