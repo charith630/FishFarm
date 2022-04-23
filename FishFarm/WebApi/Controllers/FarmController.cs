@@ -13,17 +13,17 @@ namespace WebApi.Controllers
     [Route("api/[controller]")]
     public class FarmController : ControllerBase
     {
-        private readonly IFarmService farmService;
+        private readonly IFarmService _farmService;
 
         public FarmController(IFarmService farmService)
         {
-            this.farmService = farmService;
+            _farmService = farmService;
         }
 
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] FarmRequest farmRequest)
         {
-            bool result = await farmService.RegisterFarm(farmRequest);
+            bool result = await _farmService.RegisterFarm(farmRequest);
             if (result)
             {
                 return Ok();
@@ -37,7 +37,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<List<FishFarm>>> Get()
         {
-            return Ok(await farmService.GetAllFarms());
+            return Ok(await _farmService.GetAllFarms());
         }
     }
 }

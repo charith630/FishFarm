@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Common.Response
+﻿namespace Common.Response
 {
     public class FishFarm
     {

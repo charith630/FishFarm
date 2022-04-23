@@ -1,11 +1,8 @@
-﻿using Common.Request;
-using DataAccess.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using DataAccess.Models;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccess.Repository
@@ -51,19 +48,19 @@ namespace DataAccess.Repository
                 _logger.LogError(ex.Message);
                 return false;
             }
-           
+
         }
 
         public async Task<List<Farm>> GetAllFarms()
         {
             _logger.LogInformation("'FarmRepository.GetAllFarms' method started");
 
-            List<Farm> farms = new List<Farm>();           
+            List<Farm> farms = new List<Farm>();
             try
             {
-                farms =  _dbContext.Farms.ToList();
+                farms = _dbContext.Farms.ToList();
                 return farms;
-                
+
             }
             catch (Exception ex)
             {
@@ -71,6 +68,6 @@ namespace DataAccess.Repository
                 return farms;
             }
         }
-     
+
     }
 }

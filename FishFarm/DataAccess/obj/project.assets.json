@@ -5815,19 +5815,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GP62 6QE\\.nuget\\packages\\": {}
+    "C:\\Users\\rmj\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\GP62 6QE\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\DataAccess\\obj\\",
+      "projectPath": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\rmj\\.nuget\\packages\\",
+      "outputPath": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\GP62 6QE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rmj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5841,8 +5848,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\Common\\Common.csproj": {
-              "projectPath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\Common\\Common.csproj"
+            "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\Common\\Common.csproj": {
+              "projectPath": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\Common\\Common.csproj"
             }
           }
         }
@@ -5891,7 +5898,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

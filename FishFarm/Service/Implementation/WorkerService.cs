@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 using Service.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Service.Implementation
@@ -29,8 +28,8 @@ namespace Service.Implementation
 
             try
             {
-                List<Worker> workerList = await _workerRepository.GetAllWokersByFarm(farmId);
-                List<FarmWorker>  farmWorkerList = MapToFarmWokerList(workerList);
+                List<Worker> workerList = await _workerRepository.GetAllWokersByFarmId(farmId);
+                List<FarmWorker> farmWorkerList = MapToFarmWokerList(workerList);
                 return farmWorkerList;
             }
             catch (Exception ex)
@@ -39,16 +38,16 @@ namespace Service.Implementation
 
                 return new List<FarmWorker>();
             }
-           
+
         }
-         
+
         public async Task<bool> RegisterWorker(WorkerRequest workerRequest)
         {
             _logger.LogInformation("'WorkerService.RegisterWorker' method started");
             try
             {
                 Worker workerObject = MapWorkRequestToDbObject(workerRequest);
-                return  await _workerRepository.AddWorker(workerObject);
+                return await _workerRepository.AddWorker(workerObject);
             }
             catch (Exception ex)
             {

@@ -1,13 +1,12 @@
 ﻿using Common.Request;
+using Common.Response;
+using DataAccess.Models;
+using DataAccess.Repository;
+using Microsoft.Extensions.Logging;
 using Service.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using DataAccess.Repository;
-using DataAccess.Models;
-using Common.Response;
 
 namespace Service.Implementation
 {
@@ -28,8 +27,8 @@ namespace Service.Implementation
             List<FishFarm> fishFarmList = new List<FishFarm>();
             try
             {
-                List<Farm> farmList =  await _farmRepository.GetAllFarms();
-                fishFarmList =  MapToFishFarmObject(farmList);
+                List<Farm> farmList = await _farmRepository.GetAllFarms();
+                fishFarmList = MapToFishFarmObjectList(farmList);
             }
             catch (Exception ex)
             {
@@ -66,11 +65,11 @@ namespace Service.Implementation
             };
         }
 
-        private static List<FishFarm> MapToFishFarmObject(List<Farm> farmList)
+        private static List<FishFarm> MapToFishFarmObjectList(List<Farm> farmList)
         {
             List<FishFarm> fishFarmList = new List<FishFarm>();
 
-            foreach(Farm  farm in farmList)
+            foreach (Farm farm in farmList)
             {
                 FishFarm fishFarm = new FishFarm()
                 {
