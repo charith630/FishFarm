@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "0+s7/E8flrASLyrubkiUYQLBzurhq3LO+34nLSscLASpEtJ1VK91DbAhwY+TrPI639Em9U8hyLP5p8zi1wF63A==",
+  "dgSpecHash": "YAsroDjMoH0vG6Qgw5jhKsJ8nwYBcrSFDVYtKaS1RwspRXDYDTWqzoOv44o2cHeUEUXO564BWUD84VxwVnJflg==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\My-Workspace\\Creative-Software\\FishFarm\\Service\\Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\My-Workspace\\Projects\\FishFarm\\FishFarm\\Service\\Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\rmj\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
