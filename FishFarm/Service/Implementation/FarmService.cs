@@ -5,16 +5,19 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using DataAccess.Repository;
 
 namespace Service.Implementation
 {
     public class FarmService : IFarmService
     {
         private readonly ILogger<FarmService> _logger;
-
-        public FarmService(ILogger<FarmService> logger)
+        private readonly IFarmRepository _farmRepository;
+        public FarmService(ILogger<FarmService> logger,
+            IFarmRepository farmRepository)
         {
             _logger = logger;
+            _farmRepository = farmRepository;
         }
         public Task GetAllFarms()
         {
@@ -30,17 +33,18 @@ namespace Service.Implementation
             }
         }
 
-        public Task<bool> RegisterFarm(FarmRequest farmRequest)
+        public async Task<bool> RegisterFarm(FarmRequest farmRequest)
         {
             _logger.LogInformation("'FarmService.RegisterFarm' method started");
             try
             {
-                throw new NotImplementedException();
+                bool result = await _farmRepository.AddFarm(farmRequest);
+                return result;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-                throw;
+                return false; ;
             }
         }
     }

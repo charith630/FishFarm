@@ -1,6 +1,9 @@
+using DataAccess.Models;
+using DataAccess.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,7 +33,13 @@ namespace WebApi
               .SetBasePath(AppContext.BaseDirectory)
               .AddJsonFile("appsettings.json", true, true)
               .Build();
+
+            services.AddDbContext<Context>(
+               options => options.UseSqlServer(configuration["ConnectionStrings:Sql"]),
+               ServiceLifetime.Transient);
+
             services.AddTransient<IFarmService, FarmService>();
+            services.AddTransient<IFarmRepository, FarmRepository>();
             services.AddControllers();
         }
 
