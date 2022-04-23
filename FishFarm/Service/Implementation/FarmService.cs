@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using DataAccess.Repository;
+using DataAccess.Models;
+using Common.Response;
 
 namespace Service.Implementation
 {
@@ -19,12 +21,13 @@ namespace Service.Implementation
             _logger = logger;
             _farmRepository = farmRepository;
         }
-        public Task GetAllFarms()
+        public async Task<List<FishFarm>> GetAllFarms()
         {
             _logger.LogInformation("'FarmService.GetAllFarms' method started");
             try
             {
-                throw new NotImplementedException();
+                List<Farm> farmList =  await _farmRepository.GetAllFarms();
+                return MapToFishFarmObject(farmList);
             }
             catch (Exception ex)
             {
@@ -38,14 +41,51 @@ namespace Service.Implementation
             _logger.LogInformation("'FarmService.RegisterFarm' method started");
             try
             {
-                bool result = await _farmRepository.AddFarm(farmRequest);
+                Farm farmObject = MapFarmRequestToDbObject(farmRequest);
+                bool result = await _farmRepository.AddFarm(farmObject);
                 return result;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return false; ;
+                return false;
             }
         }
+
+        private static Farm MapFarmRequestToDbObject(FarmRequest farmRequest)
+        {
+            return new Farm()
+            {
+                Name = farmRequest.Name,
+                Longitude = farmRequest.Longitude,
+                Latitude = farmRequest.Latitude,
+                NumberOfCages = farmRequest.NumberOfCages,
+                IsBargeExist = farmRequest.IsBargeExist
+            };
+        }
+
+        private static List<FishFarm> MapToFishFarmObject(List<Farm> farmList)
+        {
+            List<FishFarm> fishFarmList = new List<FishFarm>();
+
+            foreach(Farm  farm in farmList)
+            {
+                FishFarm fishFarm = new FishFarm()
+                {
+                    Id = farm.Id,
+                    Longitude = farm.Longitude,
+                    Latitude = farm.Latitude,
+                    NumberOfCages = farm.NumberOfCages,
+                    IsBargeExist = farm.IsBargeExist,
+                };
+
+                fishFarmList.Add(fishFarm);
+            }
+
+            return fishFarmList;
+
+
+        }
+
     }
 }

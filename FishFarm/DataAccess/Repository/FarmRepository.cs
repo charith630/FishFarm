@@ -21,17 +21,15 @@ namespace DataAccess.Repository
             _logger = logger;
         }
 
-        public async Task<bool> AddFarm(FarmRequest farmRequest)
+        public async Task<bool> AddFarm(Farm farm)
         {
             _logger.LogInformation("'FarmRepository.AddFarm' method started");
             try
             {
-                Farm farmObject = _dbContext.Farms.Where(farm => farm.Name.ToLower().Equals(farmRequest.Name.ToLower())).FirstOrDefault();
+                Farm farmObject = _dbContext.Farms.Where(f => f.Name.ToLower().Equals(farm.Name.ToLower())).FirstOrDefault();
                 if (farmObject == null)
                 {
-                    Farm newFarmObject = MapFarmRequestToDbObject(farmRequest);
-
-                    await _dbContext.Farms.AddAsync(newFarmObject);
+                    await _dbContext.Farms.AddAsync(farm);
                     int result = await _dbContext.SaveChangesAsync();
 
                     if (result == 1)
@@ -56,19 +54,23 @@ namespace DataAccess.Repository
            
         }
 
-
-
-
-        private static Farm MapFarmRequestToDbObject(FarmRequest farmRequest)
+        public async Task<List<Farm>> GetAllFarms()
         {
-            return new Farm()
+            _logger.LogInformation("'FarmRepository.GetAllFarms' method started");
+
+            List<Farm> farms = new List<Farm>();           
+            try
             {
-                Name = farmRequest.Name,
-                Longitude = farmRequest.Longitude,
-                Latitude = farmRequest.Latitude,
-                NumberOfCages = farmRequest.NumberOfCages,
-                IsBargeExist = farmRequest.IsBargeExist
-            };
+                farms =  _dbContext.Farms.ToList();
+                return farms;
+                
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return farms;
+            }
         }
+     
     }
 }

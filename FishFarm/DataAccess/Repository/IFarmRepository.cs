@@ -9,7 +9,7 @@ namespace DataAccess.Repository
 {
     public interface IFarmRepository
     {
-        Task<bool> AddFarm(FarmRequest farmRequest);
+        Task<bool> AddFarm(Farm farm);
 
         Task<List<Farm>> GetAllFarms();
     }

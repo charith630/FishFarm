@@ -1,4 +1,6 @@
 ﻿using Common.Request;
+using Common.Response;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Service.Interfaces
@@ -7,6 +9,6 @@ namespace Service.Interfaces
     {
         public Task<bool> RegisterFarm(FarmRequest farmRequest);
 
-        public Task GetAllFarms();
+        public Task<List<FishFarm>> GetAllFarms();
     }
 }

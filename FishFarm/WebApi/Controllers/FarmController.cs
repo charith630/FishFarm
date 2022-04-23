@@ -1,4 +1,5 @@
 ﻿using Common.Request;
+using Common.Response;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
 using System;
@@ -23,12 +24,20 @@ namespace WebApi.Controllers
         public async Task<ActionResult> Post([FromBody] FarmRequest farmRequest)
         {
             bool result = await farmService.RegisterFarm(farmRequest);
-            return Conflict();
+            if (result)
+            {
+                return Ok();
+            }
+            else
+            {               
+                return Conflict();
+            }
+            
         }
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<ActionResult<List<FishFarm>>> Get()
         {
-            throw new Exception();
-        }
+            return Ok(await farmService.GetAllFarms());
+    }
     }
 }
