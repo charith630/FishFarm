@@ -35,9 +35,9 @@ namespace WebApi.Controllers
 
         }
         [HttpGet]
-        public async Task<ActionResult<List<FarmWorker>>> Get()
+        public async Task<ActionResult<List<FarmWorker>>> Get(int farmId)
         {
-            return Ok(await farmService.GetAllFarms());
+            return Ok(await _workerService.GetWokersByFarmId(farmId));
         }
     }
 }
