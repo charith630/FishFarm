@@ -11,31 +11,31 @@ namespace WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class FarmController : ControllerBase
+    public class WorkerController :  ControllerBase
     {
-        private readonly IFarmService farmService;
+        private readonly IWorkerService _workerService;
 
-        public FarmController(IFarmService farmService)
+        public WorkerController(IWorkerService workerService)
         {
-            this.farmService = farmService;
+            _workerService = workerService;
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] FarmRequest farmRequest)
+        public async Task<ActionResult> Post([FromBody] WorkerRequest workerRequest)
         {
-            bool result = await farmService.RegisterFarm(farmRequest);
+            bool result = await _workerService.RegisterWorker(workerRequest);
             if (result)
             {
                 return Ok();
             }
             else
-            {               
+            {
                 return Conflict();
             }
-            
+
         }
         [HttpGet]
-        public async Task<ActionResult<List<FishFarm>>> Get()
+        public async Task<ActionResult<List<FarmWorker>>> Get()
         {
             return Ok(await farmService.GetAllFarms());
         }

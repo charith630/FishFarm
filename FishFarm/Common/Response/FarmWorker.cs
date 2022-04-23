@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-#nullable disable
-
-namespace DataAccess.Models
+namespace Common.Response
 {
-    public partial class Worker
+    public class FarmWorker
     {
         public int Id { get; set; }
-        public int FarmId { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }
         public string Position { get; set; }
         public DateTime CertifiedUntil { get; set; }
-        public string Image { get; set; }
-
-        public virtual Farm Farm { get; set; }
     }
 }

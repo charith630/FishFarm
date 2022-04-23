@@ -24,16 +24,18 @@ namespace Service.Implementation
         public async Task<List<FishFarm>> GetAllFarms()
         {
             _logger.LogInformation("'FarmService.GetAllFarms' method started");
+
+            List<FishFarm> fishFarmList = new List<FishFarm>();
             try
             {
                 List<Farm> farmList =  await _farmRepository.GetAllFarms();
-                return MapToFishFarmObject(farmList);
+                fishFarmList =  MapToFishFarmObject(farmList);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-                throw;
             }
+            return fishFarmList;
         }
 
         public async Task<bool> RegisterFarm(FarmRequest farmRequest)

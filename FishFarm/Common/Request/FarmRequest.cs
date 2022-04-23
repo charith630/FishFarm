@@ -10,7 +10,6 @@ namespace Common.Request
         public int NumberOfCages { get; set; }
         public decimal Longitude { get; set; }
         public decimal Latitude { get; set; }
-        public bool IsBargeExist { get; set; }
-        public byte[] Picture { get; set; }
+        public bool IsBargeExist { get; set; }      
     }
 }
